@@ -12,15 +12,18 @@
     <div id="input_div">
         <div class="center_div">
 
-            <input type="text" id="todo_input">
-            <button id="btn" class="buttonClass">
-                Add
+            <input type="text" placeholder="Enter Your Todo" onkeydown="checkEnterKey(event)" id="todo_input">
+            <button id="btn" onclick="addTodo()" class="buttonClass">
+                Add Todo
+            </button>
+            <button id="btn" onclick="deleteAll()" class="buttonClass">
+                Delete All
             </button>
         </div>
 
         <div class="list_div">
 
-            <ul id="input_list" style="list-style-type: square;">
+            <ul id="input_list" style="list-style-type: none;">
 
             </ul>
 
